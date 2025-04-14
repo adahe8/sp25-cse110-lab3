@@ -20,13 +20,18 @@
                 <li class="crumb"><a href="#summary">Summary</a></li>
             </ol>
         </nav>
+        <img class="pic" src="media/sparkles.png" alt="sparkles" />
         <h1> Standup Meeting </h1>
         <h2> Weekly Progress & Training Check-in </h2>
         <p> Optionally <span class="modality"><strong>in person</strong></span> <em>(highly recommended)</em> or <span class="modality"><b>asynchronous!</b></span></p>
         <h2> Date: 04/12/2025 </h2>
         <h2> Attendance </h2>
+        <figure>
+            <figcaption> Chatter of the crowd: </figcaption>
+            <audio controls src="media/chattering-crowd.mp3"></audio>
+        </figure>
     </header>
-    <hr />
+    <hr>
     <main>
         <section id="housekeeping">
             <h2> Housekeeping </h2>
@@ -102,14 +107,14 @@
             </div>
             <h3 id="blockers">Are you facing any blockers or challenges? </h3>
             <p>Discuss any <strong>obstacles slowing you down or preventing progress</strong>, such as <b>technical difficulties, unclear requirements, 
-                or dependencies on others.</b> <br\> No need to solve the issue here—we’ll take note of next steps in the Parking Lot.</p>
+                or dependencies on others.</b> <br/> No need to solve the issue here—we’ll take note of next steps in the Parking Lot.</p>
             <h3> Parking lot </h3>
             <p> Keep track of questions, topics, or notes that need following-up outside of the stand-up. Include who the person should connect with. <br>
             Here's everyone's contact information: </p>
             <div>
                 <ul>
-                    <li>Ada: <a href="">@Ada</a></li>
-                    <li>Parwiz: <a href="">@Parwiz Khan</a></li>
+                    <li>Ada: <a href="#">@Ada</a></li>
+                    <li>Parwiz: <a href="#">@Parwiz Khan</a></li>
                     <li>Teoman: <a href="">@Teoman </a></li>
                     <li>Andrew: <a href=""></a></li>
                     <li>Arturo: <a href=""></a></li>
@@ -133,8 +138,11 @@
                     <p> Summary of the training goes here</p>
                 </details>
             </div>
+            <video controls width="250">
+                <source src="media/meeting.mp4" type="video/mp4"/>
+            </video>
         </section>
-        <hr />
+        <hr>
         <section>
             <h2 id="summary"> Closeouts & Follow Ups </h2>
             <p> With the last 10 minutes, feel free to resume independent work, but 
@@ -145,25 +153,29 @@
                         Icebreaker: tell us about you!
                     </legend>
                     <br>
-                    <label for="name"> Name </label><br>
-                    <input type="text" id="name" name="name"/><br>
-                    <label for="since-date">Birthday</label><br>
-                    <input type="date" min="1900-01-01" max="2025-4-15"/><br>
-                    <label for="ice-cream"> Favorite ice cream flavor: </label><br>
-                    <select name="ice-cream" id="ice-cream-flavors">
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="name">
+                    <label for="since-date">Birthday</label>
+                    <input type="date" id="since-date" min="1900-01-01" max="2025-04-15">
+                    <label for="ice-cream"> Favorite ice cream flavor: </label>
+                    <select name="ice-cream" id="ice-cream">
                         <option value=""> Choose an option from the dropdown </option>
-                        <option value="Chocolate"></option><br>
-                        <option value="Vanilla"></option><br>
-                        <option value="Raspberry"></option>
-                        <option value="Strawberry"></option>
-                        <option value="Pistachio"></option>
-                        <option value="Peanut Butter"></option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="raspberry">Raspberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="pistachio">Pistachio</option>
+                        <option value="peanut butter">Peanut Butter</option>
                     </select><br>
-                    <datalist id="ice-cream-flavors">
-                        <option value="Chocolate"></option>
-                        <option value="Strawberry"></option>
-                        <option value="Vanilla"></option>
-                      </datalist>
+                    <label for="fave-animals">What's your favorite animal?</label>
+                    <input list="animals" id="fave-animal-choice" name="fave-animal-choice">
+                    <datalist id="fave-animals">
+                        <option value="Horse"></option>
+                        <option value="Dog"></option>
+                        <option value="Cat"></option>
+                        <option value="Bird"></option>
+                        <option value="Bear"></option>
+                    </datalist>
                     <label for="why"> Reason? </label><br>
                     <textarea id="why" name="reason" rows="5" cols="33">This is my favorite because...</textarea><br>
                     <fieldset>
@@ -183,7 +195,7 @@
         </section>
         
     </main>
-    <hr />
+    <hr>
     <footer>
         <p>Training/ project-prepulsion based meeting template. See you next time!</p>
     </footer>
