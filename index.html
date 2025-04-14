@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Meeting Minutes HTML Practice </title>
+    <meta name="author" content="Ada He">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ol>
+                <li class="crumb"><a href="#housekeeping">Housekeeping</a></li>
+                <li class="crumb"><a href="#check-in">Check-Ins</a></li>
+                <li class="crumb"><a href="#blockers">Blockers</a></li>
+                <li class="crumb"><a href="#learning">Learning Resources</a></li>
+                <li class="crumb"><a href="#summary">Summary</a></li>
+            </ol>
+        </nav>
+        <h1> Standup Meeting </h1>
+        <h2> Weekly Progress & Training Check-in </h2>
+        <p> Optionally <span class="modality"><strong>in person</strong></span> <em>(highly recommended)</em> or <span class="modality"><b>asynchronous!</b></span></p>
+        <h2> Date: 04/12/2025 </h2>
+        <h2> Attendance </h2>
+    </header>
+    <hr />
+    <main>
+        <section id="housekeeping">
+            <h2> Housekeeping </h2>
+            <div>
+                <ol>
+                    <li> welcome! overview of the standup structure </li>
+                    <li> learning resources: web dev intro and practices, cool industry articles </li>
+                    <li> jam sessions: deep dives into specific topics </li>
+                    <li> next steps breakdown and timeline </li>
+                </ol>
+            </div>
+        </section>
+        <section id="check-in">
+            <h2> Check-in agenda </h2>
+            <h3> Think about what you accomplished last week. What do you hope to accomplish this week?</h3>
+            <p>Share your main priorities for the week ahead, highlighting any tasks that need feedback or collaboration. 
+                If you’re waiting on something/someone to start a task, mention it so we can plan accordingly!</p>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Name </th>
+                            <th> Update </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th> Ada </th>
+                            <td> Something something HTML practice </td>
+                        </tr>
+                        <tr>
+                            <th> Parwiz </th>
+                            <td> Something </td>
+                        </tr>
+                        <tr>
+                            <th> Teoman </th>
+                            <td> something </td>
+                        </tr>
+                        <tr>
+                            <th> Ayaka </th>
+                            <td> something </td>
+                        </tr>
+                        <tr>
+                            <th> Rahul </th>
+                            <td> ... </td>
+                        </tr>
+                        <tr>
+                            <th> Arturo </th>
+                            <td> ... </td>
+                        </tr>
+                        <tr>
+                            <th> Alexander </th>
+                            <td> ... </td>
+                        </tr>
+                        <tr>
+                            <th> Andrew </th>
+                            <td> ... </td>
+                        </tr>
+                        <tr>
+                            <th> Gaurav </th>
+                            <td> ... </td>
+                        </tr>
+                        <tr>
+                            <th> Hui </th>
+                            <td> ... </td>
+                        </tr>
+                        <tr>
+                            <th> Kevin </th>
+                            <td> ... </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 id="blockers">Are you facing any blockers or challenges? </h3>
+            <p>Discuss any <strong>obstacles slowing you down or preventing progress</strong>, such as <b>technical difficulties, unclear requirements, 
+                or dependencies on others.</b> <br\> No need to solve the issue here—we’ll take note of next steps in the Parking Lot.</p>
+            <h3> Parking lot </h3>
+            <p> Keep track of questions, topics, or notes that need following-up outside of the stand-up. Include who the person should connect with. <br>
+            Here's everyone's contact information: </p>
+            <div>
+                <ul>
+                    <li>Ada: <a href="">@Ada</a></li>
+                    <li>Parwiz: <a href="">@Parwiz Khan</a></li>
+                    <li>Teoman: <a href="">@Teoman </a></li>
+                    <li>Andrew: <a href=""></a></li>
+                    <li>Arturo: <a href=""></a></li>
+                    <li>Rahul: <a href=""></a></li>
+                    <li>Ayaka: <a href=""></a></li>
+                    <li>Alex: <a href=""></a></li>
+                    <li>Alexander: <a href=""></a></li>
+                    <li>Kevin: <a href=""></a></li>
+                    <li>Hui: <a href=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="learning">
+            <div>
+                <h2> Jam session </h2>
+                <details>
+                    <summary>Summary</summary>
+                    <h3> Links </h3>
+                    <p> Any links to shared learnings or resources go here</p>
+                    <h3> Notes </h3>
+                    <p> Summary of the training goes here</p>
+                </details>
+            </div>
+        </section>
+        <hr />
+        <section>
+            <h2 id="summary"> Closeouts & Follow Ups </h2>
+            <p> With the last 10 minutes, feel free to resume independent work, but 
+                dedicate the time to the following ,<em>team-related tasks:</em></p>
+            <form>
+                <fieldset>
+                    <legend>
+                        Icebreaker: tell us about you!
+                    </legend>
+                    <br>
+                    <label for="name"> Name </label><br>
+                    <input type="text" id="name" name="name"/><br>
+                    <label for="since-date">Birthday</label><br>
+                    <input type="date" min="1900-01-01" max="2025-4-15"/><br>
+                    <label for="ice-cream"> Favorite ice cream flavor: </label><br>
+                    <select name="ice-cream" id="ice-cream-flavors">
+                        <option value=""> Choose an option from the dropdown </option>
+                        <option value="Chocolate"></option><br>
+                        <option value="Vanilla"></option><br>
+                        <option value="Raspberry"></option>
+                        <option value="Strawberry"></option>
+                        <option value="Pistachio"></option>
+                        <option value="Peanut Butter"></option>
+                    </select><br>
+                    <datalist id="ice-cream-flavors">
+                        <option value="Chocolate"></option>
+                        <option value="Strawberry"></option>
+                        <option value="Vanilla"></option>
+                      </datalist>
+                    <label for="why"> Reason? </label><br>
+                    <textarea id="why" name="reason" rows="5" cols="33">This is my favorite because...</textarea><br>
+                    <fieldset>
+                        <legend> Is the glass half empty or half full? </legend>
+                        <div>
+                            <input type="radio" id="full" name="test" value="full">
+                            <label for="full">full</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="empty" name="test" value="empty">
+                            <label for="empty">empty</label><br>
+                        </div>
+                    </fieldset>
+                    <button> Submit </button>
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+    <hr />
+    <footer>
+        <p>Training/ project-prepulsion based meeting template. See you next time!</p>
+    </footer>
+  </body>
+</html>
