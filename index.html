@@ -4,6 +4,7 @@
     <title> Meeting Minutes HTML Practice </title>
     <meta name="author" content="Ada He">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -11,18 +12,15 @@
   </head>
   <body>
     <header>
-        <nav>
-            <ol>
-                <li class="crumb"><a href="#housekeeping">Housekeeping</a></li>
-                <li class="crumb"><a href="#check-in">Check-Ins</a></li>
-                <li class="crumb"><a href="#blockers">Blockers</a></li>
-                <li class="crumb"><a href="#learning">Learning Resources</a></li>
-                <li class="crumb"><a href="#summary">Summary</a></li>
-            </ol>
+        <nav class="navbar">
+            <a href="#housekeeping">Housekeeping</a>
+            <a href="#check-in">Check-Ins</a></li>
+            <a href="#blockers">Blockers</a></li>
+            <a href="#learning">Learning Resources</a></li>
+            <a href="#summary">Summary</a></li>
         </nav>
-        <img class="pic" src="media/sparkles.png" alt="sparkles">
-        <h1> Standup Meeting </h1>
-        <h2> Weekly Progress & Training Check-in </h2>
+        <h1 class="title"> Standup Meeting </h1>
+        <h2 class="title"> Weekly Progress & Training Check-in </h2>
         <p> Optionally <span class="modality"><strong>in person</strong></span> <em>(highly recommended)</em> or <span class="modality"><b>asynchronous!</b></span></p>
         <h2> Date: 04/12/2025 </h2>
         <h2> Attendance </h2>
@@ -34,18 +32,16 @@
     <hr>
     <main>
         <section id="housekeeping">
-            <h2> Housekeeping </h2>
-            <div>
-                <ol>
-                    <li> welcome! overview of the standup structure </li>
-                    <li> learning resources: web dev intro and practices, cool industry articles </li>
-                    <li> jam sessions: deep dives into specific topics </li>
-                    <li> next steps breakdown and timeline </li>
-                </ol>
-            </div>
+            <h2 class="title"> Housekeeping </h2>
+            <ol>
+                <li> Welcome! Overview of the standup structure </li>
+                <li> Learning resources: web dev intro and practices, cool industry articles </li>
+                <li> Jam sessions: deep dives into specific topics </li>
+                <li> Next steps breakdown and timeline </li>
+            </ol>
         </section>
         <section id="check-in">
-            <h2> Check-in agenda </h2>
+            <h2 class="title"> Check-in agenda </h2>
             <h3> Think about what you accomplished last week. What do you hope to accomplish this week?</h3>
             <p>Share your main priorities for the week ahead, highlighting any tasks that need feedback or collaboration. 
                 If you’re waiting on something/someone to start a task, mention it so we can plan accordingly!</p>
@@ -111,40 +107,43 @@
             <h3> Parking lot </h3>
             <p> Keep track of questions, topics, or notes that need following-up outside of the stand-up. Include who the person should connect with. <br>
             Here's everyone's contact information: </p>
-            <div>
-                <ul>
-                    <li>Ada: <a href="#">@Ada</a></li>
-                    <li>Parwiz: <a href="#">@Parwiz Khan</a></li>
-                    <li>Teoman: <a href="">@Teoman </a></li>
-                    <li>Andrew: <a href=""></a></li>
-                    <li>Arturo: <a href=""></a></li>
-                    <li>Rahul: <a href=""></a></li>
-                    <li>Ayaka: <a href=""></a></li>
-                    <li>Alex: <a href=""></a></li>
-                    <li>Alexander: <a href=""></a></li>
-                    <li>Kevin: <a href=""></a></li>
-                    <li>Hui: <a href=""></a></li>
-                </ul>
-            </div>
+            <ul class="parking-lot">
+                <li>Ada: <a href="#">@Ada</a></li>
+                <li>Parwiz: <a href="#">@Parwiz Khan</a></li>
+                <li>Teoman: <a href="">@Teoman </a></li>
+                <li>Andrew: <a href=""></a></li>
+                <li>Arturo: <a href=""></a></li>
+                <li>Rahul: <a href=""></a></li>
+                <li>Ayaka: <a href=""></a></li>
+                <li>Alex: <a href=""></a></li>
+                <li>Alexander: <a href=""></a></li>
+                <li>Kevin: <a href=""></a></li>
+                <li>Hui: <a href=""></a></li>
+            </ul>
         </section>
         <section id="learning">
             <div>
-                <h2> Jam session </h2>
+                <h2 class="title"> Jam session </h2>
                 <details>
                     <summary>Summary</summary>
                     <h3> Links </h3>
                     <p> Any links to shared learnings or resources go here</p>
                     <h3> Notes </h3>
                     <p> Summary of the training goes here</p>
+                    <code> Here is some code. </code>
+                    <span> This is some important note about code. </span>
+                    <code> Bug bug buggy code. </code>
+                    <span> There's some bugs in this code! </span>
                 </details>
             </div>
-            <video controls width="250">
+            <!-- inline css here! -->
+            <video class="media" controls width="1000">
                 <source src="media/meeting.mp4" type="video/mp4">
             </video>
         </section>
         <hr>
         <section>
-            <h2 id="summary"> Closeouts & Follow Ups </h2>
+            <h2 class="title" id="summary"> Closeouts & Follow Ups </h2>
             <p> With the last 10 minutes, feel free to resume independent work, but 
                 dedicate the time to the following, <i>team-related tasks:</i></p>
             <form>
@@ -152,14 +151,13 @@
                     <legend>
                         Icebreaker: tell us about you!
                     </legend>
-                    <br>
-                    <label for="name"> Name </label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name">
                     <label for="since-date">Birthday</label>
                     <input type="date" id="since-date" min="1900-01-01" max="2025-04-15">
-                    <label for="ice-cream"> Favorite ice cream flavor: </label>
-                    <select name="ice-cream" id="ice-cream">
-                        <option value=""> Choose an option from the dropdown </option>
+                    <label for="ice-cream">Favorite ice cream flavor: </label>
+                    <select class="input" name="ice-cream" id="ice-cream">
+                        <option value="">Choose an option from the dropdown</option>
                         <option value="chocolate">Chocolate</option>
                         <option value="vanilla">Vanilla</option>
                         <option value="raspberry">Raspberry</option>
@@ -177,7 +175,7 @@
                         <option value="Bear"></option>
                     </datalist>
                     <label for="why"> Reason? </label><br>
-                    <textarea id="why" name="reason" rows="5" cols="33">This is my favorite because...</textarea><br>
+                    <textarea class="input" id="why" name="reason" rows="5" cols="33">This is my favorite because...</textarea><br>
                     <fieldset>
                         <legend> Is the glass half empty or half full? </legend>
                         <div>

@@ -1,0 +1,172 @@
+/* add background color and standard text settings */
+body {
+    /* variable with fallback: font-family */
+    font-family: europa, sans-serif;
+    font-size: 16px; /* absolute unit 1 */
+    font-style: normal;
+    line-height: 2em; /* relative unit 1 */
+    background-color:black;
+    color: white;
+    padding-top: 3em;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.title {
+    width:fit-content;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+}
+/* apply standard styling to headers and links */
+h1, h2, h3 {
+    text-decoration: underline;
+    line-height: 2rem; /* relative unit 2 */
+}
+
+section{
+    padding-left: 2em;
+}
+
+#blockers {
+    font-style: italic;
+}
+
+.contents{
+    color: black;
+}
+
+.contents a:hover {
+    color: blue;
+}
+.contents a:active {
+    color: navy;
+}
+
+.parking-lot a[href="#"]{
+    color: white;
+}
+
+.parking-lot a:hover {
+    color:lightblue;
+}
+.parking-lot a:active {
+    color:lightskyblue;
+}
+
+ol {
+    background-color: white;
+    color: black;
+    text-align: center;
+    list-style-position: inside; /*keep the list numbers with the text*/
+    display: block;
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-width:0.25cap; /* relative unit 3 */
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1lh;
+    margin-bottom: 2lh;
+    padding-right: 0em;
+    padding-left: 0em; 
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+p + ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+details*{
+    line-height: 0px;
+}
+
+video{
+    margin: 1em;
+}
+
+p ~ span {
+    color: red;
+}
+
+th, td {
+    color: white;
+    border: 1px solid;
+    border-color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+legend {
+    background-color: #fff;
+    color: #000;
+    padding: 3px 6px;
+}
+  
+label:has(+ input, + .input) {
+   margin-bottom: 1em;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    line-height: 110%;
+    text-align: left;
+
+    input, .input{
+        max-width: 80%;
+        margin-bottom: 1em;
+    }
+}
+
+fieldset fieldset{
+    padding: 1em;
+}
+  
+button{
+    width: 2.5cm; /* absolute unit 2 */
+    height: 1.25cm;
+    border: 0.5mm solid cornflowerblue; /* absolute unit 3 */
+    margin: 1em 0em 0em 0em;
+    background: white;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background: cornflowerblue;
+}
+
+section > p {
+    text-align: left;
+}
+
+details > summary {
+    font-size: large;
+}
+
+
+@media (width <= 1250px){
+    .media{
+        max-width: 80%;
+        min-width: 250px;
+    }
+}
+  
