@@ -1,7 +1,7 @@
 /* add background color and standard text settings */
 body {
     /* variable with fallback: font-family */
-    font-family: europa, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px; /* absolute unit 1 */
     font-style: normal;
     line-height: 2em; /* relative unit 1 */
